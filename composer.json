@@ -1,0 +1,24 @@
+{
+    "name": "yammayap/yammastan",
+    "description": "A PHPStan extension to ignore common issues.",
+    "homepage": "https://github.com/Yammayap/yammastan",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yammayap Ltd",
+            "homepage": "https://www.yammayap.com",
+            "role": "Owner"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "phpstan/phpstan": "^2.0"
+    },
+    "suggest": {
+        "larastan/larastan": "For Laravel support"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    }
+}
