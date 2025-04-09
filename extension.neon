@@ -1,2 +1,76 @@
-parameters:
-    	ignoreErrors:
+    parameters:
+        ignoreErrors:
+        ###
+        ### PHP
+        ###
+        -
+            reportUnmatched: false
+            message: "#^Parameter \\#1 \\$callback of function call_user_func_array expects callable\\(\\)\\: mixed, non\\-falsy\\-string given\\.$#"
+            path: ../../../app/
+
+        -
+            reportUnmatched: false
+            message: "#^Parameter \\#1 \\$callback of function call_user_func expects callable\\(\\)\\: mixed, non\\-falsy\\-string given\\.$#"
+            path: ../../../app/
+
+        -
+            reportUnmatched: false
+            message: "#^Parameter \\#1 \\$callback of function call_user_func expects callable\\(\\)\\: mixed, array\\{class-string, '(.+)'\\} given\\.$#"
+            path: ../../../app/
+
+        -
+            reportUnmatched: false
+            message: "#^Parameter \\#1 \\$callback of function call_user_func expects callable\\(\\)\\: mixed, array\\{string, '(.+)'\\} given\\.$#"
+            path: ../../../app/
+
+
+        ###
+        ### Yammayap Filters
+        ###
+        -
+            reportUnmatched: false
+            message: "#^Method App\\\\Filters\\\\Filter\\:\\:applyFiltersToQuery\\(\\) has parameter \\$query with generic class Illuminate\\\\Database\\\\Eloquent\\\\Builder but does not specify its types\\: TModel$#"
+            path: ../../../app/Filters/Filter.php
+
+        -
+            reportUnmatched: false
+            message: "#^Method App\\\\Filters\\\\Filter\\:\\:applyFiltersToQuery\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Builder does not specify its types\\: TModel$#"
+            path: ../../../app/Filters/Filter.php
+
+        -
+            reportUnmatched: false
+            message: "#^Method App\\\\Filters\\\\Filter\\:\\:applySortToQuery\\(\\) has parameter \\$query with generic class Illuminate\\\\Database\\\\Eloquent\\\\Builder but does not specify its types\\: TModel$#"
+            path: ../../../app/Filters/Filter.php
+
+        -
+            reportUnmatched: false
+            message: "#^Method App\\\\Filters\\\\Filter\\:\\:applySortToQuery\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Builder does not specify its types\\: TModel$#"
+            path: ../../../app/Filters/Filter.php
+
+        -
+            reportUnmatched: false
+            message: "#^Method App\\\\Filters\\\\Filter\\:\\:getDefaultQuery\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Builder does not specify its types\\: TModel$#"
+            path: ../../../app/Filters/Filter.php
+
+        ###
+        ### kalnoy/nestedset
+        ###
+        -
+            reportUnmatched: false
+            message: '#Call to an undefined method App\\Models\\[a-zA-Z0-9\\_]+::descendantsAndSelf\(\)#'
+            path: ../../../app/
+
+        -
+            reportUnmatched: false
+            message: '#Call to an undefined method App\\Models\\[a-zA-Z0-9\\_]+::ancestorsAndSelf\(\)#'
+            path: ../../../app/
+
+        -
+            reportUnmatched: false
+            message: '#Call to an undefined method Illuminate\\Database\\Eloquent\\Collection<int, App\\Models\\[a-zA-Z0-9\\_]+>::toTree\(\).#'
+            path: ../../../app/
+
+        -
+            reportUnmatched: false
+            message: "#^Call to an undefined static method App\\\\Models\\\\[a-zA-Z0-9\\_]+::fixTree\\(\\)\\.$#"
+            path: ../../../app/
