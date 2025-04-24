@@ -27,6 +27,15 @@
 
 
         ###
+        ### Eloquent
+        ###
+        -
+            message: '#^Parameter \#1 \$(.+) of method Illuminate\\Database\\Eloquent\\Relations\\MorphTo\<Illuminate\\Database\\Eloquent\\Model,App\\Models\\(.+)\>\:\:associate\(\) expects Illuminate\\Database\\Eloquent\\Model\|null, App\\Models\\Interfaces\\(.+) given\.$#'
+            identifier: argument.type
+            path: ../../../app/
+
+
+        ###
         ### Yammayap Filters
         ###
         -
